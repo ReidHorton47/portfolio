@@ -22,10 +22,88 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Registration Form</title>
+</head>
+<body>
+  <h1 id="title">Perfect Game Baseball Organization</h1>
 
-    <div style="padding: 1rem;">
-        <h1>Welcome to My Website</h1>
-        <p>This is a sample content section for testing the navigation bar.</p>
-    </div>
+  
+<h1>Please fill out this to create an account on our website.</h1>
+
+ 
+  <form id="survey-form" action="your-server-endpoint" method="post">
+
+  
+    <label id="name-label" for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    <br>
+
+   
+    <label id="email-label" for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <br>
+
+   
+    <label id="number-label" for="number">Age:</label>
+    <input type="number" id="number" name="age" placeholder="Enter" min="12" max="99" required>
+    <br>
+
+    
+    <p id="description"> Account Type:</p>
+    <label>
+      <input type="radio" name="accountType" value="Personal" required>
+      Player
+    </label>
+    <br>
+    <label>
+      <input type="radio" name="accountType" value="Business" required>
+      Parent
+    </label>
+    <br>
+
+   
+    <label for="dropdown">Choose a subscription type:</label>
+    <select id="dropdown" name="subscription">
+      <option value="free">Free</option>
+      <option value="premium">Premium</option>
+      <option value="pro">Pro</option>
+    </select>
+    <br>
+
+   
+    <p>Select your postions:</p>
+    <label>
+      <input type="checkbox" name="interests" value="sports">
+      Infield
+    </label>
+    <br>
+    <label>
+      <input type="checkbox" name="interests" value="music">
+      Outfield
+    </label>
+    <br>
+    <label>
+      <input type="checkbox" name="interests" value="technology">
+      Pitcher only
+    </label>
+    <br>
+
+   
+    <label for="comments">height | weight | gpa | school enrollment:</label>
+    <br>
+    <textarea class="textpadding" id="comments" name="comments" placeholder="Enter information here"></textarea>
+    <br>
+
+   
+    <button id="submit" type="submit">Submit</button>
+  
+  </form>
+<link rel="stylesheet" href="styles.css">
 </body>
 </html>
